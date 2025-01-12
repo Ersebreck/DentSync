@@ -1,0 +1,39 @@
+# REST API Framework
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+
+# Database
+SQLAlchemy>=2.0.23
+alembic>=1.12.1
+psycopg2-binary>=2.9.9  # PostgreSQL driver
+asyncpg>=0.29.0  # Async PostgreSQL driver
+
+# Data Validation and Serialization
+pydantic>=2.5.1
+pydantic-settings>=2.1.0
+email-validator>=2.1.0  # Email validation for pydantic
+
+# Authentication and Security
+python-jose[cryptography]>=3.3.0  # JWT tokens
+passlib[bcrypt]>=1.7.4  # Password hashing
+python-multipart>=0.0.6  # Form data processing
+
+# Testing
+pytest>=7.4.3
+pytest-asyncio>=0.21.1
+httpx>=0.25.1  # For async HTTP requests in tests
+pytest-cov>=4.1.0  # Test coverage
+
+# Frontend MVP
+streamlit>=1.28.2
+
+# Utilities
+python-dateutil>=2.8.2
+pytz>=2023.3.post1
+requests>=2.31.0
+
+# Development Tools
+black>=23.11.0  # Code formatting
+flake8>=6.1.0   # Code linting
+mypy>=1.7.0     # Static type checking
+isort>=5.12.0   # Import sorting
