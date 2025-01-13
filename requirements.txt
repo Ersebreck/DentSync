@@ -1,39 +1,42 @@
-# REST API Framework
-fastapi>=0.104.1
-uvicorn[standard]>=0.24.0
+# FastAPI Framework and Server
+fastapi>=0.104.1           # Modern web framework for building APIs
+uvicorn[standard]>=0.24.0  # ASGI server implementation
+python-multipart>=0.0.6    # Support for form data processing
 
-# Database
-SQLAlchemy>=2.0.23
-alembic>=1.12.1
-psycopg2-binary>=2.9.9  # PostgreSQL driver
-asyncpg>=0.29.0  # Async PostgreSQL driver
+# Database and ORM
+SQLAlchemy>=2.0.23        # SQL toolkit and ORM
+alembic>=1.12.1           # Database migration tool
+psycopg2-binary>=2.9.9    # PostgreSQL adapter for Python
+asyncpg>=0.29.0           # Asynchronous PostgreSQL driver
+greenlet>=3.0.1           # Required for async SQLAlchemy operations
 
-# Data Validation and Serialization
-pydantic>=2.5.1
-pydantic-settings>=2.1.0
-email-validator>=2.1.0  # Email validation for pydantic
+# Data Validation and Settings Management
+pydantic>=2.5.1           # Data validation using Python type annotations
+pydantic-settings>=2.1.0  # Settings management with Pydantic
+email-validator>=2.1.0    # Email validation for Pydantic
 
 # Authentication and Security
-python-jose[cryptography]>=3.3.0  # JWT tokens
-passlib[bcrypt]>=1.7.4  # Password hashing
-python-multipart>=0.0.6  # Form data processing
-
-# Testing
-pytest>=7.4.3
-pytest-asyncio>=0.21.1
-httpx>=0.25.1  # For async HTTP requests in tests
-pytest-cov>=4.1.0  # Test coverage
-
-# Frontend MVP
-streamlit>=1.28.2
-
-# Utilities
-python-dateutil>=2.8.2
-pytz>=2023.3.post1
-requests>=2.31.0
+python-jose[cryptography]>=3.3.0  # JSON Web Token handling
+passlib[bcrypt]>=1.7.4            # Password hashing utilities
+python-dotenv>=1.0.0              # Environment variable management
 
 # Development Tools
-black>=23.11.0  # Code formatting
-flake8>=6.1.0   # Code linting
-mypy>=1.7.0     # Static type checking
-isort>=5.12.0   # Import sorting
+black>=23.11.0           # Code formatter
+flake8>=6.1.0            # Code linter
+mypy>=1.7.0             # Static type checker
+isort>=5.12.0           # Import sorter
+
+# Testing
+pytest>=7.4.3           # Testing framework
+pytest-asyncio>=0.21.1  # Async support for pytest
+httpx>=0.25.1           # HTTP client for async tests
+pytest-cov>=4.1.0       # Test coverage reporting
+faker>=20.1.0           # Generates fake data for testing
+
+# Utilities and Helpers
+python-dateutil>=2.8.2  # Extensions to Python's datetime module
+pytz>=2023.3.post1      # Timezone handling
+requests>=2.31.0        # HTTP library for making requests
+
+# Frontend MVP (Streamlit)
+streamlit>=1.28.2       # Data app framework for MVP
